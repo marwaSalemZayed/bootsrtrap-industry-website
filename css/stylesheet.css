@@ -1,0 +1,208 @@
+/* global */
+ 
+ @import url('https://fonts.googleapis.com/css2?family=Noto+Naskh+Arabic:wght@400;500;700&family=Reem+Kufi+Fun:wght@500;600;700&family=Varela+Round&display=swap');
+
+body{
+    direction: rtl;
+    font-family: 'Noto Naskh Arabic', serif;
+font-size: 23px;
+text-align: right;
+}
+:root{
+    --mainColor: #ffc572;
+}
+.section{
+    padding: 100px 0;
+}
+a{
+    text-decoration: none;
+    outline: none;
+}
+ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+/* ///////////////////////////////////////////////// */
+/* navbar------------ */
+.navbar{
+    box-shadow: 1px 2px 5px #c5bdbd;
+}
+.section-title{
+    position: relative;
+}
+.section-title::after{
+    content: "";
+    display: block;
+    background-color: var(--mainColor);
+    width: 43%;
+    height: 5px;
+}
+
+
+
+/* end of navbar//////////////// */
+
+/* home section-------------------- */
+.home{
+    height: 80vh;
+    background-image: url('../image/slide-bg-1.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 1px;
+    margin-top: 10px;
+
+}
+.home-items{
+    width: 50%;
+    margin-right: auto;
+}
+.home-items h2{
+    font-size: 45px;
+    color: #f2f2f2;
+    margin-top: 15%;
+    letter-spacing: 1.5px;
+    word-spacing: 2px;
+}
+.home-items p{
+    font-size: 30px;
+    color: #f1f1f1;
+    margin-top: 5%;
+    letter-spacing: 1.5px;
+    word-spacing: 2px;
+}
+@media(max-width:768px) {
+    .home-items{
+        width: 100%;
+    }
+    .home{height: max-content;}
+}
+.btn a{
+    letter-spacing: 1.5px;
+    word-spacing: 2px;
+    font-size: 25px;
+    font-weight: 700;
+    text-decoration: none;
+    color: #8b8383;
+}
+/* END HOME SECTION//////////////////// */
+
+/* ABOUT SECTION------------------ */
+
+.about-img img{
+    border-radius: 15px;
+    box-shadow: 2px 2px 5px #ffc572;
+}
+.about-title p{
+margin-top: 50px;
+}
+/* END SECTION ABOUT//////////////// */
+
+/* START SECTION NEWS----------------- */
+.news-left{
+    display: flex;
+    align-items: center;
+}
+.news-left img{
+    width: 140px;
+    margin-left: 12px;
+}
+.news-left p{
+    font-size: 13px;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+}
+.news-item{
+    transition: .5s ease-in-out;
+    box-shadow: 2px 2px 5px #ffc572;
+}
+.news-item:hover{
+    transform: scale(1.1,1.1);
+}
+/* END SECTION NEWS///////////////////////// */
+
+/* START OF SUBSCRIPT SECTION---------------- */
+.subscript{ position: relative;
+    width: 100%;
+    height: 70vh;
+    padding: 1px;
+    background-image: url(../image/subscribe-our-newsletter-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: #f1f1f1;
+}
+.subs-item{ 
+    width: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.subs-item p{
+    letter-spacing: 1px;
+    word-spacing: 2px;
+}
+.subs-item .subs-form{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.subs-form input{
+    width: 80%;
+    border-radius: 30px;
+}
+.subs-form button{width: 15%;
+height: 50px;
+    border-radius: 30px;
+}
+.subs-form button a{
+    font-size: 13px;
+}
+
+/* start of footer---------------------- */
+footer{ padding: 1px;
+    margin-top: 5px;
+background-image: url(../image/sky.jpg);
+height: 50vh;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+    color: #f1f1f1;
+
+}
+.footer-item{
+    font-size: 30px;
+    margin-top: 15px;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+}
+footer .links li a{
+    color:#f2f2f2;
+    padding: 5px;
+    text-decoration: none;
+}
+.links li a:hover{
+color: #ffc572;
+}
+footer .logo{
+    margin-top: 15%;
+}
+.f-link{
+    margin-top: 12%;
+}
+.last-project{
+    display: flex;
+    align-items: center;
+
+}
+.last-project img{
+    width: 100px;
+    margin-bottom: 15px;
+    margin-left: 15px;
+}
+.last-title{
+    margin-top: 5%;
+}
+/* END OF SUBSCRIPT SECTION//////////////////////////*/
